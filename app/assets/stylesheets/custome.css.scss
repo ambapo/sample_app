@@ -1,0 +1,92 @@
+@import "bootstrap";
+
+/*Site wide*/
+
+/*$firebrick: #b22222*/
+/*$Gold: #fdd700;*/
+
+html {
+	overflow-y: scroll; 
+}
+body {
+	padding-top: 60px;/*the distance btn h1 and navbar*/
+}
+section {
+	overflow: auto;
+}
+textarea {
+	resize: vertical;
+}
+.center{
+	text-align: center;
+}
+.center {
+margin-bottom: 10px;
+}
+/*Topography*/
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1;
+}
+h1 {
+	font-size: 3em;
+	letter-spacing: -2px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+h2 {
+	font-size: 1.7em;
+	letter-spacint: -1px;
+	margin-bottom: 3px;
+	text-align: center;
+	font-weight: normal;/*kinda places the h2 in one contineuous line*/
+	color: #999;
+}
+p {
+	font-size: 1.1em;
+	line-height: 1.7em;
+}
+/*header*/
+#logo {
+	float: left;
+	margin-right: 10px;
+	font-size: 1.7em;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bold;
+	line-height : 1; 
+}
+#logo:hover {
+	color: #ffd700;
+	text-decoration: none;
+}
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+}
+
+/*footer*/
+footer{
+	margin-top: 100px;
+	padding-top: 5px;
+	border-top: 1px solid #b22222;/*border btn footer and the 'body' above*/
+	color: #999;
+}
+footer a:hover {
+	color: #cd5c5c;
+}
+footer small {
+	float: left;
+}
+footer ul {
+	float: right;
+	list-style: none;
+}
+footer ul li {
+	float: left;
+	margin-left: 10px;
+}
