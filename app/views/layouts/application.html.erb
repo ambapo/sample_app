@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+a<!DOCTYPE html>
 <html>
   <head>
     <title>Ambapo Sample App | <%= yield(:title) %></title>
@@ -6,12 +6,17 @@
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
   </head>
-  <body>
+<body>
     <%= render 'layouts/header' %>
-  	<div class= "container">
-  		<%= yield %>
-    <%= render 'layouts/footer' %>
-  	</div>
+    <div class="container">
+      <% flash.each do |key, value| %>
+      <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+        <div class="alert alert-<%= key %>"><%= value %></div>
+      <% end %>
+      <%= yield %>
+      <%= render 'layouts/footer' %>
+      <%= debug(params) if Rails.env.development? %>
+    </div>
   </body>
 </html>
 
